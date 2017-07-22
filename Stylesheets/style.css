@@ -1,17 +1,38 @@
 
-header h1{
+body {margin: 0;}
 
-    margin:0 ;
-    display: inline;
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-ul{
-    padding:0 20px 0;
-    list-style: none;
-    margin:0;
-    display:inline-block;
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-li{
-    display: inline-block;
-    margin:0 10px 0;
-    padding:0 180px 0;
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #1E90FF;}
+
+ul.topnav li.right {float: right;}
+
+ul.topnav li.ra {
+    background-color: #1E90FF;
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
 }
