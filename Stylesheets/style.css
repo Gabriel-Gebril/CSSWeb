@@ -1,4 +1,3 @@
-
 body {margin: 0;}
 
 ul.topnav {
@@ -17,6 +16,11 @@ ul.topnav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+ul.topnav li a.depad {
+    padding: 0
+
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
